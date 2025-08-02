@@ -1,4 +1,13 @@
+const slider = document.querySelector("#gridRange")
+const gridSize = document.querySelectorAll("#gridValue")
 const gridContainer = document.createElement("div")
+
+console.log(gridSize)
+slider.addEventListener("input", () => {
+    gridSize.forEach(span => {
+        span.textContent = slider.value
+    })
+})
 
 for (let i = 0; i < 16; i++) {
     let row = document.createElement("div")
