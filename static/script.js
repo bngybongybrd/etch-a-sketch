@@ -19,7 +19,16 @@ let isMouseDown = false
 
 gridContainer.addEventListener("mousedown", (e) => {
     const selectedSquare = e.target.closest(".square")
-    console.log(selectedSquare)
+    // console.log(selectedSquare)
     isMouseDown = true
     selectedSquare.style.background = "black"
 })
+
+gridContainer.addEventListener("mouseover", (e) => {
+    if (isMouseDown === true) {
+        const selectedSquare = e.target.closest(".square")
+        selectedSquare.style.background = "black"
+    }
+})
+
+gridContainer.addEventListener("mouseup", () => isMouseDown = false)
