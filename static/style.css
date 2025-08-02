@@ -1,9 +1,17 @@
 .square {
+    aspect-ratio: 1 / 1;
     width: 28px;
     height: 28px;
-    border: 0.5px solid black;
+    border: 1px solid black;
+    box-sizing: border-box;
 }
 
 .row {
     display: flex;
+}
+
+.gridContainer {
+    aspect-ratio: 1 / 1;
+    width: 512px;
+    border: 0.5px solid black;
 }
