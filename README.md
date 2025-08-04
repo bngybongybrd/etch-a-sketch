@@ -17,4 +17,4 @@ You can set the size up to **64×64** and click-and-drag to turn squares black, 
 - Click-and-drag drawing
 
 ## Screenshot
-![Screenshot](images/screenshot.png)
+![Screenshot](images/Screenshot.png)
